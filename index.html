@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animations</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+
+	<style>
+		 .wave-container {
+            display: inline-block;
+        }
+
+        .wave-container img {
+            width: 200px; /* We can adjust size as needed */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .wave-container:hover img {
+            animation: wave 0.5s infinite alternate ease-in-out;
+        }
+
+       .hand {
+            font-size: 5rem;
+            display: inline-block;
+            animation: wave 1s infinite ease-in-out;
+            transform-origin: bottom center;
+        }
+
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(20deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-20deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+         .btn2a {
+            position: relative;
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 18px;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(to top right, green 50%, black 50%);
+            transition: background 0.4s ease-in-out;
+            overflow: hidden;
+            transition: ease-in 1s;
+        }
+
+        .btn2a:hover {
+            background: linear-gradient(to top right, green 100%, green 100%);
+           transition: ease-in 1s;;
+        }
+	</style>
+</head>
+	<body>
+		<div class="menu1">
+			<nav class="menu-items">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">services</a>
+						<ul>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Graphic Design</a></li>
+							<li><a href="#">Android </a></li>
+						</ul>
+
+					</li>
+					<li><a href="#">courses</a>
+
+						<ul>
+							<li><a href="#">Web Course</a>
+								<ul>
+									<li><a href="#">Web Design</a></li>
+									<li><a href="#">Web Development</a></li>
+									<li><a href="#">WordPress</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Course Android </a></li>
+							<li><a href="#">Photography</a></li>
+							<li><a href="#">SEO</a></li>
+							<li><a href="#">Graphics</a>
+								<ul>
+									<li><a href="#">UX Design</a></li>
+									<li><a href="#">UI Design</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="logo">
+				<p>Logo</p>
+			</div>
+		</div>
+
+
+		<div class="page1">
+				<h1 style="color: blueviolet;">Animations</h1>
+				<h2 style="color: navy;">Please hover over each item to see the actions</h2>
+				<h3 style="color:magenta;">Please Scroll down to see the full page</h3>
+			<div class="box1">
+				
+
+				<div class="card1">
+					<div class="person">
+						<img src="./images/p1.png" alt="p1">
+						<div class="description">
+							<h3>About Laura</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisici.</p>
+						</div>
+					</div>
+
+					<div class="overlay1">
+						<p>Laura Don</p><br>
+						<p>Age: 2 years</p>
+					</div>
+
+				</div>
+
+
+			</div>
+			<button class="b1">Click Here</button>
+
+			<button class="b2">Click Here</button>
+			<div class="hand">✋</div>
+
+			<div class="box23">
+				<div class="box2">
+				<img src="./images/r4.jpg">
+				<p>Rotate</p>
+				
+				</div>
+				<div class="box3">
+					
+					<img src="./images/pizza.png">
+					<p>Skew</p>
+				</div>
+				
+
+			</div>
+
+			<div class="part2">
+
+      <div class="btn2">
+        <button class="btn2a">Hover Me</button>
+      </div>
+
+      <div>
+        <button class="btn btn-left-Annimation">Hire Me</button>
+      </div>
+
+      <section class="first">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col col-md-4 py-5">
+              <div class="card border-0 shadow-sm">
+                <!-- ======= hover effect one ======= -->
+                <div class="hov-effect-01">
+                  <img src="./images/coffee.png" alt="..." class="img-fluid">
+                  <h2>Coffee</h2>
+                </div>
+                <!-- ======= hover effect one end ======= -->
+                <div class="card-body">
+                  <h5 class="card-title">There also a Hover</h5>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 py-5">
+              <!-- ======= hover effect two ======= -->
+              <div class="card  border-0 hov-effect-02">
+                <img src="./images/chocolate.png" alt="myimage" class="img-fluid">
+                <p>Chocolate Drink... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut 
+              </div>
+              <!-- ======= hover effect two end ======= -->
+            </div>
+
+            <!-- ======= hover effect three ======= -->
+            <div class="col-md-4 py-5">
+              <div class="card  border-0 hov-effect-03">
+                <img src="./images/icecream.png" alt="myimage" class="img-fluid">
+                <p>This Icecream is awesome!
+                </p>
+              </div>
+              <!-- ======= hover effect end ======= -->
+            </div>
+
+                  <div class="col col-md-4">
+                    <div class="card border-0 shadow">
+                      <!-- ======= hover effect four ======= -->
+                      <div class="hov-effect-04">
+                        <div class="overlay"></div>
+                        <img src="./images/burger.png" class="card-img-top" alt="...">
+                        <h2>Burger</h2>
+                      </div>
+                      <!-- ======= hover effect four end ======= -->
+                      <div class="card-body">
+                        <h5 class="card-title">Delicious Burger</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card border-0 shadow"style="width: 25rem;">
+
+                      <div id="blog" class="blog-box container">
+                      
+                        Skeleton
+                        <div class="blog-inner" style="margin:10px 20px;">
+                          <div class="blog-img">
+                            <img class="img-fluid" src="./images/skeleton.png" alt="skeleton" style="border:5px solid red;"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+
+          </div>
+        </div>
+
+      </section>
+  
+    </div>
+
+
+
+
+					
+		</div> <!--page 1 ends her-->
+
+
+
+	</body>
+</html>

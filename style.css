@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+body{
+	background:linear-gradient(navy,magenta);
+}
+
+
+.menu1{
+	
+	background:linear-gradient(hotpink,#fdcb6e);
+	padding: 0px 20px;
+
+}
+.menu1:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.menu-items{
+	
+		float: left;
+
+}
+
+.menu-items ul li:hover{
+	background-color: tomato;
+	
+}
+
+.menu-items > ul{
+	display: flex;
+}
+
+.menu-items ul ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+.menu-items ul ul ul{
+	left: 100%;
+	top: 0;
+	
+}
+.menu-items ul li:hover >ul{
+	display: block;
+}
+.menu-items ul li ul{
+	white-space: nowrap;
+}
+
+
+.menu-items ul li{
+	list-style: none;
+	padding: 15px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu-items ul li a{
+	text-decoration: none;
+}
+
+.logo{
+	float: right;
+
+}
+/**********************page 1 **********************************/
+
+.page1{
+	width: 90%;
+	height: auto;
+	box-shadow: 5px 5px 10px gray;
+	margin: 0px auto;
+	text-align: center;
+	background: linear-gradient(lightblue,palegreen);
+	padding: 40px;
+
+}
+
+.box1{
+	width: 23.5%;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid;
+	overflow: hidden;
+}
+.person{
+	text-align: justify;
+}
+.overlay1{
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; /*to keep two paragraphs in two lines*/
+	color: white;
+	transition: .7s;
+
+}
+.box1:hover .overlay1{
+	bottom: 0;
+	
+}
+
+.b1{
+	padding: 10px 20px;
+	border-radius: 25px;
+	background-color: palevioletred;	
+	margin: 13px;
+}
+.b1:hover{
+	color: red;
+	background-color: white;
+}
+.b2{
+	padding: 10px 20px;
+	border-radius: 25px;
+	background-color: gray;	
+	margin: 13px;
+	position: relative;
+	color: white;
+	overflow: hidden;
+}
+.b2:before{
+	content: '';
+	position: absolute;
+	background-color: rgba(231, 76, 70, 0.6);
+	top: 0;
+	left: -100%;
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+	transition: .5s;
+}
+.b2:hover:before{
+	left: 0;
+}
+.box23{
+	display: flex;
+	margin: 20px;
+	gap: 22px;
+}
+.box2{
+	height: 200px;
+	width: 300px;
+	background-color: lightblue;
+	padding: 10px;
+}
+.box2:hover {
+	transform: rotate(45deg);
+}
+.box2 img{
+	margin: 5px;
+}
+.box3{
+	height: 200px;
+	width: 300px;
+	background-color: lightslategray;
+	padding: 10px;
+}
+.box3:hover{
+	transform: skewY(21deg);
+}
+.box2 img, .box3 img{
+	width: 80%;
+}
+
+
+
+
